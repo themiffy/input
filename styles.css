@@ -31,3 +31,15 @@ button:before {
   font-size: 16px;
   color:  #f7f2e9;
 }
+
+.temp{
+    margin-top: 15px;
+}
+
+.suggestions_table{
+    border: 1px solid black;
+}
+
+tr{
+//тут стили для таблички
+}
