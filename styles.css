@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
 form {
   position: relative;
-  width: 300px;
+  width: 600px;
   margin: 0 auto;
 }
 input {
@@ -32,14 +32,24 @@ button:before {
   color:  #f7f2e9;
 }
 
-.temp{
-    margin-top: 15px;
-}
-
 .suggestions_table{
     border: 1px solid black;
 }
 
-tr{
-//тут стили для таблички
+tr:hover{
+  color: #77abee;
+  cursor: pointer;
+}
+
+.suggestions_table{
+  margin: 0 auto;
+  position: relative;
+  display: none;
+  width: 300px;
+  padding-left: 10px;
+  border: 2px solid #a1948c;
+  border-radius: 5px;
+  outline: none;
+  background: #f7f2e9;
+  color:#a1948c;
 }
