@@ -1,7 +1,12 @@
 * {box-sizing: border-box;}
 form {
   position: relative;
-  width: 300px;
+  width: 600px;
+  margin: 0 auto;
+}
+.focus{
+  width: 600px;
+  position: relative;
   margin: 0 auto;
 }
 input {
@@ -30,4 +35,26 @@ button:before {
   font-family: FontAwesome;
   font-size: 16px;
   color:  #f7f2e9;
+}
+
+.suggestions_table{
+    border: 1px solid black;
+}
+
+tr:hover{
+  color: #77abee;
+  cursor: pointer;
+}
+
+.suggestions_table{
+  margin: 0 auto;
+  position: relative;
+  display: none;
+  width: 600px;
+  padding-left: 10px;
+  border: 2px solid #a1948c;
+  border-radius: 5px;
+  outline: none;
+  background: #f7f2e9;
+  color:#a1948c;
 }
