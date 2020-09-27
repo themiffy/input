@@ -1,16 +1,6 @@
 var token = "6aa3e113e95eb7fff794dec3f36b26b1fce6c145";
 var url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address";
 
-
-$("#address").suggestions({
-    token: token,
-    type: "ADDRESS",
-    /* Вызывается, когда пользователь выбирает одну из подсказок */
-    onSelect: function(suggestion) {
-        console.log(suggestion);
-    }
-});
-
 $(document).ready(function(){
 
     var table = document.getElementById("suggestions_table");
@@ -55,5 +45,11 @@ $(document).ready(function(){
         .then(result => show(result)) // Result goes into a function
         .catch(error => console.log("error", error));
     })
+
+    $(document).mouseup(function(event){
+        if(!$('#focus').is(event.target) && $('#focus').has(event.target).length === 0){
+            table.style.display = "none";
+        }
+    });
     
 });
